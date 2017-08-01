@@ -1,0 +1,23 @@
+  <div >
+    <h3>User List</h3>
+      <table style="width:100%" class="link" >
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th> 
+          <th>Email</th>
+          <th>Website</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr (click)="navigateAlbum(user)" *ngFor="let user of userlist">
+          <td>{{user.id}}</td>
+          <td>{{ user.name }}</td>
+          <td>{{user.email}}</td>
+          <td>{{ user.website }}</td> 
+          <td>{{ user.phone }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

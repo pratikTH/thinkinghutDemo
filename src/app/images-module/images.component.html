@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+ <h3>Images of album {{albumId.title}}</h3>
+  <div *ngFor="let img of imgList">
+      <div class="gallery">
+        <a target="_blank" >
+          <img [src]="img.url" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+      </div>
+  </div>
+  <div class="clearfix"></div>
+  <div>
+    <button class="backBtn" (click)="navigateAlbum()">
+      Back
+    </button>
+  </div>
+  
+
+
+</body>
+</html>

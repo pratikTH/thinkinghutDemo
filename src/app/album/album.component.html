@@ -1,0 +1,25 @@
+<div>
+  <h3>Album  for {{userId.name}}</h3>
+
+  <table style="width:100%" class="link" >
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th> 
+    </tr>
+  </thead>
+  <tbody >
+    <tr (click)="navigateImage(album)" *ngFor="let album of albumList">
+      <td>{{album.id}}</td>
+      <td>{{album.title}}</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+<div>
+  <button class="backBtn" (click)="navigateUser()">
+    Back
+  </button>
+</div>
+</div>
